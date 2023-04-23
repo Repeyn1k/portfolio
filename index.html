@@ -16,97 +16,101 @@
     />
   </head>
   <body>
-    <header>
-      <img src="img/main-logo.svg" alt="main-logo" width="60" height="60" />
-      <nav>
-        <a href="#2">Обо мне</a>
-        <a href="#3">Навыки </a>
-        <a href="#4">Интересы</a>
-        <a href="#5">Контакты</a>
-      </nav>
-    </header>
-    <main>
-      <section id="1">
-        <img
-          src="img/user-photo.jpg"
-          alt="user-photo"
-          width="300"
-          height="300"
-        />
-        <h1>Першин Александр</h1>
-        <p class="subtitle">Программист</p>
-      </section>
-      <section id="2">
-        <h2>Пара слов обо мне</h2>
-        <p>Привет</p>
-        <p>
-          В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана по
-          направлению &laquo;Информатика и вычисли­тельная техника&raquo;.
-        </p>
-        <p>
-          В прошлом году защитил диплом бакалавра на тему &laquo;Разработка
-          очень сложного программного комплекса для супер-важной цели&raquo;.
-          Работа была высоко оценена комиссией.
-        </p>
-        <p>
-          Также я работаю программистом в компании ЗАО НВП &laquo;Болид&raquo;,
-          занимаюсь разработкой на языке C++.
-        </p>
-      </section>
-      <section id="3">
-        <h2>Мои навыки</h2>
-        <div>
-          <a> Сортировать </a>
-          <button>По названию</button>
-          <button>По уровню</button>
-        </div>
-        <dl>
-          <dt>html</dt>
-          <dd>
-            <div style="width: 40%">40%</div>
-          </dd>
-          <dt>css</dt>
-          <dd>
-            <div style="width: 40%">40%</div>
-          </dd>
-          <dt>python</dt>
-          <dd>
-            <div style="width: 30%">30%</div>
-          </dd>
-          <dt>c++</dt>
-          <dd>
-            <div style="width: 80%">80%</div>
-          </dd>
-        </dl>
-      </section>
-      <section id="4">
-        <h2>Мои интересы</h2>
-        <p>
-          Наибольший интерес для меня в данный момент представляет
-          программирование и изучение искусственного интеллекта.
-        </p>
-        <p>
-          Но помимо учёбы и работы я также люблю играть на барабанах и читать
-          зарубежную классику.
-        </p>
-      </section>
-      <section id="5">
-        <h2>Мои контакты</h2>
-        <ul>
-          <li><a href="tel:88005553535"> +7 800 555-35-35 </a></li>
-          <li>
-            <a href="mailto:sanya2o14@yandex.ru"> sanya2o14@yandex.ru </a>
-          </li>
-        </ul>
-        <ul>
-          <li><a href="https://vk.com/id166416257">вконтакте</a></li>
-          <li><a> tg - @repeyn1k </a></li>
-          <li><a href="https://github.com/Repeyn1k">github</a></li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2023 Першин Александр</p>
+    <div class="container">
+      <header class="main-header">
+        <img src="img/main-logo.svg" alt="main-logo" width="60" height="60" />
+        <nav>
+          <a href="#2">Обо мне</a>
+          <a href="#3">Навыки </a>
+          <a href="#4">Интересы</a>
+          <a href="#5">Контакты</a>
+        </nav>
+      </header>
+      <main>
+        <section id="1">
+          <img
+            src="img/user-photo.jpg"
+            alt="user-photo"
+            width="300"
+            height="300"
+          />
+          <h1>Першин Александр</h1>
+          <p class="subtitle">Программист</p>
+        </section>
+        <section id="2" class="intro">
+          <h2>Пара слов обо мне</h2>
+          <p>Привет</p>
+          <p>
+            В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана по
+            направлению &laquo;Информатика и вычисли­тельная техника&raquo;.
+          </p>
+          <p>
+            В прошлом году защитил диплом бакалавра на тему &laquo;Разработка
+            очень сложного программного комплекса для супер-важной цели&raquo;.
+            Работа была высоко оценена комиссией.
+          </p>
+          <p>
+            Также я работаю программистом в компании ЗАО НВП
+            &laquo;Болид&raquo;, занимаюсь разработкой на языке C++.
+          </p>
+        </section>
+        <section id="3" class="skills">
+          <h2>Мои навыки</h2>
+          <div>
+            <a> Сортировать </a>
+            <button>По названию</button>
+            <button>По уровню</button>
+          </div>
+          <dl>
+            <dt>html</dt>
+            <dd>
+              <div style="width: 40%">40%</div>
+            </dd>
+            <dt>css</dt>
+            <dd>
+              <div style="width: 40%">40%</div>
+            </dd>
+            <dt>python</dt>
+            <dd>
+              <div style="width: 30%">30%</div>
+            </dd>
+            <dt>c++</dt>
+            <dd>
+              <div style="width: 80%">80%</div>
+            </dd>
+          </dl>
+        </section>
+        <section id="4" class="interests">
+          <h2>Мои интересы</h2>
+          <p>
+            Наибольший интерес для меня в данный момент представляет
+            программирование и изучение искусственного интеллекта.
+          </p>
+          <p>
+            Но помимо учёбы и работы я также люблю играть на барабанах и читать
+            зарубежную классику.
+          </p>
+        </section>
+        <section id="5" class="contacts">
+          <h2>Мои контакты</h2>
+          <ul>
+            <li><a href="tel:88005553535"> +7 800 555-35-35 </a></li>
+            <li>
+              <a href="mailto:sanya2o14@yandex.ru"> sanya2o14@yandex.ru </a>
+            </li>
+          </ul>
+          <ul>
+            <li><a href="https://vk.com/id166416257">вконтакте</a></li>
+            <li><a> tg - @repeyn1k </a></li>
+            <li><a href="https://github.com/Repeyn1k">github</a></li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <footer class="main-footer">
+      <div class="container">
+        <p>&copy; 2023 Першин Александр</p>
+      </div>
     </footer>
   </body>
 </html>
