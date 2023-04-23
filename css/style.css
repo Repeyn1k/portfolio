@@ -1,9 +1,30 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;;
+}
+
+:root{
+    --black: #031923;
+    --yellow: #E5BB33;
+    --blue: #205B75;
+    --white: #FFFFFF;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 body {
     font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
+    color: var(--black);
 }
 
 h1 {
@@ -53,4 +74,9 @@ button {
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
+}
+
+footer{
+    color: var(--white);
+    background-color: var(--blue);
 }
