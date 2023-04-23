@@ -41,6 +41,7 @@ h1 {
   font-weight: 400;
   font-size: 38px;
   line-height: 120%;
+  color: var(--blue);
 }
 
 h2 {
@@ -68,6 +69,11 @@ a {
 }
 
 button {
+  padding: 0;
+  border: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -80,13 +86,34 @@ button {
   background-color: var(--blue);
 }
 
-.main-header {
+.main-header nav a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 15px;
+  color: var(--black);
+}
+
+.main-header nav a:hover{
+  color: var(--blue);
 }
 
 .intro {
 }
 
 .skills {
+}
+
+.skills button {
+  padding: 6px 10px 10px;
+  color: var(--blue);
+  background-color: var(--white);
+  border: 1px solid var(--blue);
+  border-radius: 8px;
+}
+
+.skills button:hover{
+  color: var(--white);
+  background-color: var(--blue);
 }
 
 .interests{
