@@ -104,9 +104,9 @@ button {
 .skills button {
   padding: 6px 10px 10px;
   color: var(--blue);
-  background-color: var(--white);
   border: 1px solid var(--blue);
   border-radius: 8px;
+  text-transform: lowercase;
 }
 
 .skills button:hover {
@@ -151,22 +151,22 @@ button {
 
 
 .skill-item_html {
-  background-image: url("/img/skills/html.svg");
+  background-image: url("../img/skills/html.svg");
 }
 
 
 .skill-item_css {
-  background-image: url("/img/skills/css.svg");
+  background-image: url("../img/skills/css.svg");
 }
 
 
 .skill-item_cpp {
-  background-image: url("/img/skills/c++.svg");
+  background-image: url("../img/skills/c++.svg");
 }
 
 
 .skill-item_python {
-  background-image: url("/img/skills/python.svg");
+  background-image: url("../img/skills/python.svg");
 }
 
 .interests {}
@@ -213,15 +213,15 @@ button {
 }
 
 .social-link_telegram {
-  background-image: url("/img/social/telegram.svg");
+  background-image: url("../img/social/telegram.svg");
 }
 
 .social-link_vk {
-  background-image: url("/img/social/vk.svg");
+  background-image: url("../img/social/vk.svg");
 }
 
 .social-link_github {
-  background-image: url("/img/social/github.svg");
+  background-image: url("../img/social/github.svg");
 }
 
 .contact {
@@ -257,9 +257,9 @@ button {
 }
 
 .contact-link_tel {
-  background-image: url("/img/contacts/tel.svg");
+  background-image: url("../img/contacts/tel.svg");
 }
 
 .contact-link_mail {
-  background-image: url("/img/contacts/mail.svg");
+  background-image: url("../img/contacts/mail.svg");
 }
