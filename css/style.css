@@ -172,3 +172,44 @@ button {
 .social-link_github{
   background-image: url("/img/social/github.svg");
 }
+
+.contact {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contact li {
+  display: inline-block;
+  margin-right: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.contact li a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.contact li a:hover{
+  color: var(--blue);
+}
+
+.contact-link {
+  display: block;
+  background-repeat: no-repeat;
+  padding-left: 42px;
+  margin-top: 5px;
+
+  margin-bottom: 5px;
+}
+
+.contact-link_tel{
+  background-image: url("/img/contacts/tel.svg");
+}
+
+.contact-link_mail{
+  background-image: url("/img/contacts/mail.svg");
+}
