@@ -93,15 +93,13 @@ button {
   color: var(--black);
 }
 
-.main-header nav a:hover{
+.main-header nav a:hover {
   color: var(--blue);
 }
 
-.intro {
-}
+.intro {}
 
-.skills {
-}
+.skills {}
 
 .skills button {
   padding: 6px 10px 10px;
@@ -111,16 +109,69 @@ button {
   border-radius: 8px;
 }
 
-.skills button:hover{
+.skills button:hover {
   color: var(--white);
   background-color: var(--blue);
 }
 
-.interests{
+.skill-list {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
-.contacts {
+.skill-list dt {
+  margin-bottom: 6px;
+  padding: 5px 0 5px 38px;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 30px;
 }
+
+
+.skill-level {
+  margin: 4px 0 16px;
+  padding: 2px;
+  font-size: 0;
+  border: 1px solid var(--blue);
+  border-radius: 16px;
+}
+
+
+.skill-level div {
+  height: 14px;
+  background-color: var(--yellow);
+  border-radius: 8px;
+}
+
+
+.skill-item {
+  text-transform: lowercase;
+}
+
+
+.skill-item_html {
+  background-image: url("/img/skills/html.svg");
+}
+
+
+.skill-item_css {
+  background-image: url("/img/skills/css.svg");
+}
+
+
+.skill-item_cpp {
+  background-image: url("/img/skills/c++.svg");
+}
+
+
+.skill-item_python {
+  background-image: url("/img/skills/python.svg");
+}
+
+.interests {}
+
+.contacts {}
 
 .visually-hidden {
   position: absolute;
@@ -161,15 +212,15 @@ button {
   background-color: var(--yellow);
 }
 
-.social-link_telegram{
-  background-image:url("/img/social/telegram.svg");
+.social-link_telegram {
+  background-image: url("/img/social/telegram.svg");
 }
 
-.social-link_vk{
+.social-link_vk {
   background-image: url("/img/social/vk.svg");
 }
 
-.social-link_github{
+.social-link_github {
   background-image: url("/img/social/github.svg");
 }
 
@@ -181,9 +232,9 @@ button {
 
 .contact li {
   display: inline-block;
-  margin-right: 50px;
+  /* margin-right: 50px;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 25px; */
   padding: 0;
 }
 
@@ -193,7 +244,7 @@ button {
   color: var(--black);
 }
 
-.contact li a:hover{
+.contact li a:hover {
   color: var(--blue);
 }
 
@@ -202,14 +253,13 @@ button {
   background-repeat: no-repeat;
   padding-left: 42px;
   margin-top: 5px;
-
   margin-bottom: 5px;
 }
 
-.contact-link_tel{
+.contact-link_tel {
   background-image: url("/img/contacts/tel.svg");
 }
 
-.contact-link_mail{
+.contact-link_mail {
   background-image: url("/img/contacts/mail.svg");
 }
