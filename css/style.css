@@ -104,6 +104,7 @@ button {
   background-color: var(--blue);
   padding-top: 50px;
   padding-bottom: 50px;
+  margin-top: 120px;
 }
 
 .main-header {
@@ -111,6 +112,7 @@ button {
   padding-top: 60px;
   gap: 40px;
   align-items: center;
+  margin-bottom: 120px;
 }
 
 .main-header nav {
@@ -129,7 +131,6 @@ button {
 
 section {
   margin: 0;
-  margin-top: 120px;
   margin-bottom: 120px;
 }
 
@@ -176,7 +177,7 @@ section {
 }
 
 .skill-list dt {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   padding: 5px 0 5px 38px;
   background-position: left;
   background-repeat: no-repeat;
@@ -185,7 +186,7 @@ section {
 
 
 .skill-level {
-  margin: 4px 0 16px;
+  margin: 4px 0 20px;
   padding: 2px;
   font-size: 0;
   border: 1px solid var(--blue);
@@ -308,8 +309,6 @@ section {
   display: block;
   background-repeat: no-repeat;
   padding-left: 42px;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .contact-link_tel {
