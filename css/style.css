@@ -138,7 +138,10 @@ section {
   display: flex;
   gap: 70px;
   align-items: center;
-  justify-content: space-between;
+}
+
+.avatar-section>img {
+  border-radius: 50%;
 }
 
 .intro {}
@@ -150,11 +153,17 @@ section {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+  gap: 40px;
 }
 
-.skills>div>div {
+.skills h2 {
+  margin: 0;
+}
+
+.skills-sort {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .skills button {
@@ -296,12 +305,12 @@ section {
   padding: 0;
 }
 
-.contact li a {
+.contact a {
   text-decoration: none;
   color: var(--black);
 }
 
-.contact li a:hover {
+.contact a:hover {
   color: var(--blue);
 }
 
@@ -309,6 +318,7 @@ section {
   display: block;
   background-repeat: no-repeat;
   padding-left: 42px;
+  background-position: 0 center;
 }
 
 .contact-link_tel {
