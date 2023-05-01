@@ -136,6 +136,18 @@ button {
 
 .skills {}
 
+.skills>div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.skills>div>div {
+  display: flex;
+  gap: 20px;
+}
+
 .skills button {
   padding: 6px 10px 10px;
   color: var(--blue);
@@ -222,9 +234,11 @@ button {
 }
 
 .social {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  gap: 20px;
 }
 
 .social li {
@@ -260,21 +274,20 @@ button {
 }
 
 .contact {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  gap: 40px;
+  margin-bottom: 40px;
 }
 
 .contact li {
   display: inline-block;
-  /* margin-right: 50px;
-  margin-top: 25px;
-  margin-bottom: 25px; */
   padding: 0;
 }
 
 .contact li a {
-  display: inline-block;
   text-decoration: none;
   color: var(--black);
 }
