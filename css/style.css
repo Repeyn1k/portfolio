@@ -168,7 +168,7 @@ section {
 
 .skills > div {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
@@ -267,6 +267,7 @@ section {
 
 .social {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -307,6 +308,7 @@ section {
 
 .contact {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -368,6 +370,10 @@ section {
   .avatar-section img {
     width: 250px;
     height: 250px;
+  }
+  .contact-link {
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 }
 
@@ -451,6 +457,19 @@ section {
   .skills > div {
     margin-bottom: 30px;
   }
+
+  .contact {
+    margin-bottom: 30px;
+  }
+
+  .contact-link {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .main-footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 @media screen and (max-width: 380px) {
@@ -474,5 +493,14 @@ section {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 360px) {
+  .contact {
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .social {
+    gap: 15px;
+  }
 }
