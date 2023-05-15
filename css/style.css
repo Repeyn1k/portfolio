@@ -168,6 +168,7 @@ section {
 
 .skills > div {
   display: flex;
+  flex-wrap:wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
@@ -361,6 +362,9 @@ section {
   a {
     font-size: 16px;
   }
+  button {
+    font-size: 14px;
+  }
   .avatar-section img {
     width: 250px;
     height: 250px;
@@ -377,6 +381,7 @@ section {
   }
   h2 {
     font-size: 20px;
+    margin-bottom: 30px;
   }
   h3 {
     font-size: 16px;
@@ -388,6 +393,9 @@ section {
     font-size: 14px;
   }
   a {
+    font-size: 14px;
+  }
+  button {
     font-size: 14px;
   }
 
@@ -439,7 +447,32 @@ section {
     width: 150px;
     height: 150px;
   }
+
+  .skills > div {
+    margin-bottom: 30px;
+  }
 }
 
-/* @media screen and (max-width: 360px) {
-} */
+@media screen and (max-width: 380px) {
+  .skills > div {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .skills-sort {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .skills button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+}
