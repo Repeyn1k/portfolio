@@ -115,7 +115,7 @@ button {
   margin-bottom: 120px;
 }
 
-.main-header_wrap{
+.main-header_wrap {
   width: 100%;
   display: flex;
   align-items: center;
@@ -361,6 +361,10 @@ section {
   a {
     font-size: 16px;
   }
+  .avatar-section img {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 /* @media screen and (max-width: 768px) {
@@ -420,6 +424,20 @@ section {
 
   .nav-btn_open {
     background-image: url(../img/icons/burger.svg);
+  }
+
+  .avatar-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .avatar-section img {
+    width: 150px;
+    height: 150px;
   }
 }
 
