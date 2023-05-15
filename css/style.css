@@ -140,15 +140,17 @@ section {
   align-items: center;
 }
 
-.avatar-section>img {
+.avatar-section > img {
   border-radius: 50%;
 }
 
-.intro {}
+.intro {
+}
 
-.skills {}
+.skills {
+}
 
-.skills>div {
+.skills > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -193,7 +195,6 @@ section {
   background-size: 30px;
 }
 
-
 .skill-level {
   margin: 4px 0 20px;
   padding: 2px;
@@ -202,41 +203,37 @@ section {
   border-radius: 16px;
 }
 
-
 .skill-level div {
   height: 14px;
   background-color: var(--yellow);
   border-radius: 8px;
 }
 
-
 .skill-item {
   text-transform: lowercase;
 }
-
 
 .skill-item_html {
   background-image: url("../img/skills/html.svg");
 }
 
-
 .skill-item_css {
   background-image: url("../img/skills/css.svg");
 }
-
 
 .skill-item_cpp {
   background-image: url("../img/skills/c++.svg");
 }
 
-
 .skill-item_python {
   background-image: url("../img/skills/python.svg");
 }
 
-.interests {}
+.interests {
+}
 
-.contacts {}
+.contacts {
+}
 
 .visually-hidden {
   position: absolute;
@@ -328,3 +325,52 @@ section {
 .contact-link_mail {
   background-image: url("../img/contacts/mail.svg");
 }
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .subtitle {
+    font-size: 28px;
+  }
+  body {
+    font-size: 16px;
+  }
+  a {
+    font-size: 16px;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+
+} */
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  body {
+    font-size: 14px;
+  }
+  a {
+    font-size: 14px;
+  }
+}
+
+/* @media screen and (max-width: 360px) {
+} */
