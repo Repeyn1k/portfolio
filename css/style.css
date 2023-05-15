@@ -115,6 +115,11 @@ button {
   margin-bottom: 120px;
 }
 
+.main-header img {
+  width: 60px;
+  height: 60px;
+}
+
 .main-header nav {
   display: flex;
 }
@@ -127,6 +132,10 @@ button {
 
 .main-header nav a:hover {
   color: var(--blue);
+}
+
+.nav-btn {
+  display: none;
 }
 
 section {
@@ -370,6 +379,29 @@ section {
   a {
     font-size: 14px;
   }
+
+  .main-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main-header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 30px;
+  }
+
+  .main-header nav a{
+    
+    text-align: center;
+  }
+
+  .main-header img {
+    width: 40px;
+    height: 40px
+  }
+
 }
 
 /* @media screen and (max-width: 360px) {
