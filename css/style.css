@@ -115,6 +115,13 @@ button {
   margin-bottom: 120px;
 }
 
+.main-header_wrap{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .main-header img {
   width: 60px;
   height: 60px;
@@ -385,23 +392,35 @@ section {
     gap: 20px;
   }
 
-  .main-header nav{
+  .main-header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 20px 30px;
   }
 
-  .main-header nav a{
-    
+  .main-header nav a {
     text-align: center;
   }
 
   .main-header img {
     width: 40px;
-    height: 40px
+    height: 40px;
   }
 
+  .nav-btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-btn_close {
+    background-image: url(../img/icons/close.svg);
+  }
+
+  .nav-btn_open {
+    background-image: url(../img/icons/burger.svg);
+  }
 }
 
 /* @media screen and (max-width: 360px) {
