@@ -115,14 +115,9 @@ button {
   margin-bottom: 120px;
 }
 
-.main-header_wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.main-header img {
-  width: 60px;
+.main-logo {
+  display: block;
+  width: 60px; 
   height: 60px;
 }
 
@@ -426,6 +421,9 @@ section {
 
   .main-header_wrap {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .main-header nav {
@@ -439,7 +437,7 @@ section {
     text-align: center;
   }
 
-  .main-header img {
+  .main-logo {
     width: 40px;
     height: 40px;
   }
@@ -518,7 +516,8 @@ section {
     margin-bottom: 50px;
   }
   .main-header{
-    margin-top: 50px;
+    padding-top: 20px;
+    margin-bottom: 50px;
   }
   .contact {
     flex-direction: column;
