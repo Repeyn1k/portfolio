@@ -372,10 +372,16 @@ section {
     width: 250px;
     height: 250px;
   }
+
   .contact-link {
+    line-height: 100%;
     padding-top: 7px;
     padding-bottom: 7px;
+    background-repeat: no-repeat;
+    padding-left: 42px;
+    background-position: 0 center;
   }
+  
   .main-footer {
     margin-top: 80px;
   }
@@ -391,6 +397,7 @@ section {
   }
   h1 {
     font-size: 32px;
+    margin-bottom: 10px;
   }
   h2 {
     font-size: 20px;
@@ -430,11 +437,12 @@ section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 20px 30px;
   }
 
   .main-header nav a {
     text-align: center;
+    line-height: 100%;
+    padding: 20px 30px;
   }
 
   .main-logo {
