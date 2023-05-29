@@ -362,12 +362,17 @@ section {
     font-size: 16px;
   }
   button {
-    font-size: 14px;
+    font-size: 16px;
   }
   
   .main-header {
     margin-bottom: 80px;
   }
+
+  .avatar-section {
+    gap: 50px;
+  }
+
   .avatar-section img {
     width: 250px;
     height: 250px;
@@ -387,9 +392,11 @@ section {
   }
 }
 
-/* @media screen and (max-width: 768px) {
-
-} */
+@media screen and (max-width: 768px) {
+  button {
+    font-size: 14px;
+  }
+}
 
 @media screen and (max-width: 650px) {
   section {
@@ -413,9 +420,6 @@ section {
     font-size: 14px;
   }
   a {
-    font-size: 14px;
-  }
-  button {
     font-size: 14px;
   }
 
