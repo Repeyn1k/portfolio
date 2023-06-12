@@ -3,25 +3,21 @@ const skills = {
         html = {
             name: 'html',
             width: 40,
-            class: 'skill-item_html',
             path: 'html.svg'
         },
         css = {
             name: 'css',
             width: 40,
-            class: 'skill-item_css',
             path: 'css.svg'
         },
         pyhton = {
             name: 'python',
             width: 60,
-            class: 'skill-item_python',
             path: 'python.svg'
         },
         cpp = {
             name: 'c++',
             width: 80,
-            class: 'skill-item_cpp',
             path: 'c++.svg'
         }
     ],
