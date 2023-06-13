@@ -26,7 +26,7 @@ const skills = {
             const dt = document.createElement('dt')
             dt.classList.add('skill-item')
             dt.innerHTML = element.name;
-            dt.style.backgroundImage = `url(../img/skills/${element.path})`;
+            dt.style.backgroundImage = `url(img/skills/${element.path})`;
             parrent.append(dt)
             const dd = document.createElement('dd')
             const div = document.createElement('div')
