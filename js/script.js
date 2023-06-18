@@ -55,6 +55,22 @@ const skills = {
     }
 }
 
+const menu = {
+    close: function () {
+        mainNav.classList.add('main-nav_closed');
+        closeButtonNav.classList.remove('nav-btn_close');
+        closeButtonNav.classList.add('nav-btn_open');
+        closeButtonNav.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
+    },
+
+    open: function () {
+        mainNav.classList.remove('main-nav_closed');
+        closeButtonNav.classList.remove('nav-btn_open');
+        closeButtonNav.classList.add('nav-btn_close');
+        closeButtonNav.innerHTML = '<span class="visually-hidden">Закрыть меню</span>';
+    }
+}
+
 const skillList = document.querySelector('dl.skill-list')
 skills.generateList(skillList)
 
@@ -80,24 +96,15 @@ const mainNav = document.querySelector('nav.main-nav');
 const closeButtonNav = document.querySelector('button.nav-btn');
 
 closeButtonNav.addEventListener('click', (e) => {
+    if (e.target.classList.contains('nav-btn_open')){
+        menu.open();
+    } else {
+        menu.close();
+    }
     console.log('закрыть');
 });
 
-function closeMenu() {
-    mainNav.classList.add('main-nav_closed');
-    closeButtonNav.classList.remove('nav-btn_close');
-    closeButtonNav.classList.add('nav-btn_open');
-    closeButtonNav.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
-}
-
-closeMenu();
-
-function openMenu() {
-    mainNav.classList.add('main-nav_closed');
-    closeButtonNav.classList.remove('nav-btn_open');
-    closeButtonNav.classList.add('nav_btn_close');
-    closeButtonNav.innerHTML = '<span class="visually-hidden">Закрыть меню</span>';
-}
+menu.close();
 
 function getComaparer(prop) {
     return function (a, b) {
