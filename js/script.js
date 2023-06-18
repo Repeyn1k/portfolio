@@ -2,26 +2,30 @@ const skills = {
     data: [
         {
             name: 'html',
-            width: 40,
+            level: 40,
             path: 'html.svg'
         },
         {
             name: 'css',
-            width: 40,
+            level: 40,
             path: 'css.svg'
         },
         {
             name: 'python',
-            width: 60,
+            level: 60,
             path: 'python.svg'
         },
         {
             name: 'c++',
-            width: 80,
+            level: 80,
             path: 'c++.svg'
         }
     ],
+
+    isSort: false,
+
     generateList: function(parent) {
+        parent.innerHTML = '';
         this.data.forEach(element => {
             const dt = document.createElement('dt')
             dt.classList.add('skill-item')
@@ -30,8 +34,8 @@ const skills = {
             parent.append(dt)
             const dd = document.createElement('dd')
             const div = document.createElement('div')
-            div.style.width = `${element.width}%`;
-            div.innerHTML = `${element.width}%`;
+            div.style.width = `${element.level}%`;
+            div.innerHTML = `${element.level}%`;
             dd.classList.add('skill-level')
             dd.append(div)
             parent.append(dd)
@@ -63,10 +67,38 @@ sortBtnsBlock.addEventListener('click', (e) => {
     }
 });
 
+function getComaparer(prop) {
+    return function (a, b) {
+        if (a[prop] < b[prop]) {
+            return -1;
+        }
+        if (a[prop] > b[prop]) {
+            return 1;
+        }
+        return 0;
+    }
+}
+
 function sortByName() {
-    console.log('сортировка по имени');
+    if (skills.isSort !== "name") {
+        skills.data.sort(getComaparer('name'));
+        skills.isSort = "name";
+        console.log('отсортировали данные по имени');
+    } else {
+        skills.data.reverse();
+        console.log('инвертировали данные');
+    }
+    skills.generateList(skillList);
 }
 
 function sortByLevel() {
-    console.log('сортировка по уровню');
+    if (skills.isSort !== "level") {
+        skills.data.sort(getComaparer('level'));
+        skills.isSort = "level";
+        console.log('отсортировали данные по уровню');
+    } else {
+        skills.data.reverse();
+        console.log('инвертировали данные');
+    }
+    skills.generateList(skillList);
 }
