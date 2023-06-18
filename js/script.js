@@ -40,6 +40,18 @@ const skills = {
             dd.append(div)
             parent.append(dd)
         });
+    },
+
+    sortList: function(type) {
+        if (this.isSort !== type) {
+            this.data.sort(getComaparer(type));
+            this.isSort = type;
+            console.log('отсортировали');
+        } else {
+            this.data.reverse();
+            console.log('инвертировали данные');
+        }
+        this.generateList(skillList)
     }
 }
 
@@ -53,13 +65,12 @@ console.log(sortBtnsBlock);
 sortBtnsBlock.addEventListener('click', (e) => {
     let target = e.target;
     if (e.target.nodeName === "BUTTON"){
-        // console.log(e.target);
         switch (target.dataset.type) {
             case 'name':
-                sortByName();
+                skills.sortList("name");
                 break;
             case 'level':
-                sortByLevel();
+                skills.sortList("level");
                 break;
             default:
                 console.log('неизвестная кнопка');
@@ -77,28 +88,4 @@ function getComaparer(prop) {
         }
         return 0;
     }
-}
-
-function sortByName() {
-    if (skills.isSort !== "name") {
-        skills.data.sort(getComaparer('name'));
-        skills.isSort = "name";
-        console.log('отсортировали данные по имени');
-    } else {
-        skills.data.reverse();
-        console.log('инвертировали данные');
-    }
-    skills.generateList(skillList);
-}
-
-function sortByLevel() {
-    if (skills.isSort !== "level") {
-        skills.data.sort(getComaparer('level'));
-        skills.isSort = "level";
-        console.log('отсортировали данные по уровню');
-    } else {
-        skills.data.reverse();
-        console.log('инвертировали данные');
-    }
-    skills.generateList(skillList);
 }
