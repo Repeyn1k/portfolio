@@ -41,3 +41,32 @@ const skills = {
 
 const skillList = document.querySelector('dl.skill-list')
 skills.generateList(skillList)
+
+
+const sortBtnsBlock = document.querySelector('div.skills-sort')
+console.log(sortBtnsBlock);
+
+sortBtnsBlock.addEventListener('click', (e) => {
+    let target = e.target;
+    if (e.target.nodeName === "BUTTON"){
+        // console.log(e.target);
+        switch (target.dataset.type) {
+            case 'name':
+                sortByName();
+                break;
+            case 'level':
+                sortByLevel();
+                break;
+            default:
+                console.log('неизвестная кнопка');
+        }
+    }
+});
+
+function sortByName() {
+    console.log('сортировка по имени');
+}
+
+function sortByLevel() {
+    console.log('сортировка по уровню');
+}
