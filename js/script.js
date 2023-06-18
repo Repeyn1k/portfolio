@@ -24,7 +24,7 @@ const skills = {
 
     isSort: false,
 
-    generateList: function(parent) {
+    generateList: function (parent) {
         parent.innerHTML = '';
         this.data.forEach(element => {
             const dt = document.createElement('dt')
@@ -42,7 +42,7 @@ const skills = {
         });
     },
 
-    sortList: function(type) {
+    sortList: function (type) {
         if (this.isSort !== type) {
             this.data.sort(getComaparer(type));
             this.isSort = type;
@@ -60,11 +60,9 @@ skills.generateList(skillList)
 
 
 const sortBtnsBlock = document.querySelector('div.skills-sort')
-console.log(sortBtnsBlock);
-
 sortBtnsBlock.addEventListener('click', (e) => {
     let target = e.target;
-    if (e.target.nodeName === "BUTTON"){
+    if (e.target.nodeName === "BUTTON") {
         switch (target.dataset.type) {
             case 'name':
                 skills.sortList("name");
@@ -77,6 +75,29 @@ sortBtnsBlock.addEventListener('click', (e) => {
         }
     }
 });
+
+const mainNav = document.querySelector('nav.main-nav');
+const closeButtonNav = document.querySelector('button.nav-btn');
+
+closeButtonNav.addEventListener('click', (e) => {
+    console.log('закрыть');
+});
+
+function closeMenu() {
+    mainNav.classList.add('main-nav_closed');
+    closeButtonNav.classList.remove('nav-btn_close');
+    closeButtonNav.classList.add('nav-btn_open');
+    closeButtonNav.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
+}
+
+closeMenu();
+
+function openMenu() {
+    mainNav.classList.add('main-nav_closed');
+    closeButtonNav.classList.remove('nav-btn_open');
+    closeButtonNav.classList.add('nav_btn_close');
+    closeButtonNav.innerHTML = '<span class="visually-hidden">Закрыть меню</span>';
+}
 
 function getComaparer(prop) {
     return function (a, b) {
