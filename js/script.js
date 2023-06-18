@@ -101,7 +101,6 @@ closeButtonNav.addEventListener('click', (e) => {
     } else {
         menu.close();
     }
-    console.log('закрыть');
 });
 
 menu.close();
