@@ -105,6 +105,17 @@ closeButtonNav.addEventListener('click', (e) => {
 
 menu.close();
 
+const body = document.querySelector('body.dark-theme');
+const themeSwitch = document.querySelector('input.switch-checkbox');
+themeSwitch.addEventListener('change', (e) => {
+    if (e.target.checked){
+        body.classList.remove('dark-theme');
+    }
+    else {
+        body.classList.add('dark-theme');
+    }
+});
+
 function getComaparer(prop) {
     return function (a, b) {
         if (a[prop] < b[prop]) {
