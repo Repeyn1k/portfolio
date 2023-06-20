@@ -107,12 +107,19 @@ menu.close();
 
 const body = document.querySelector('body.dark-theme');
 const themeSwitch = document.querySelector('input.switch-checkbox');
+
+if (localStorage.getItem('darktheme') == 'false') {
+    themeSwitch.checked = true;  
+    body.classList.remove('dark-theme');
+} 
 themeSwitch.addEventListener('change', (e) => {
     if (e.target.checked){
         body.classList.remove('dark-theme');
+        localStorage.setItem('darktheme', 'false');
     }
     else {
         body.classList.add('dark-theme');
+        localStorage.setItem('darktheme', 'true');
     }
 });
 
