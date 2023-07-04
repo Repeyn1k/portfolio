@@ -25,23 +25,23 @@ const skills = {
         if (this.isSort !== type) {
             this.data.sort(getComaparer(type));
             this.isSort = type;
-            console.log('отсортировали');
         } else {
             this.data.reverse();
-            console.log('инвертировали данные');
         }
         this.generateList(skillList)
     },
 
-    initList: function (path, parent) {
+    initList: function (path, parent, section) {
         fetch(path)
             .then(data => data.json())
             .then(object  => {
                 this.data = object.skills;
                 this.generateList(parent);
-                console.log(object);
             })
-            .catch(() => console.error('что-то пошло не так'));
+            .catch(() => {
+                sectionList.remove();
+                console.error('Ошибка загрузки списка навыков');
+            });
     }
 }
 
@@ -62,7 +62,8 @@ const menu = {
 }
 
 const skillList = document.querySelector('dl.skill-list')
-skills.initList('db/skills.json', skillList)
+const sectionList = document.querySelector('section.skills')
+skills.initList('db/skills.json', skillList, sectionList)
 
 const sortBtnsBlock = document.querySelector('div.skills-sort')
 sortBtnsBlock.addEventListener('click', (e) => {
