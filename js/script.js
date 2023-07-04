@@ -1,26 +1,5 @@
 const skills = {
-    data: [
-        {
-            name: 'html',
-            level: 40,
-            path: 'html.svg'
-        },
-        {
-            name: 'css',
-            level: 40,
-            path: 'css.svg'
-        },
-        {
-            name: 'python',
-            level: 60,
-            path: 'python.svg'
-        },
-        {
-            name: 'c++',
-            level: 80,
-            path: 'c++.svg'
-        }
-    ],
+    data: [],
 
     isSort: false,
 
@@ -52,6 +31,17 @@ const skills = {
             console.log('инвертировали данные');
         }
         this.generateList(skillList)
+    },
+
+    initList: function (path, parent) {
+        fetch(path)
+            .then(data => data.json())
+            .then(object  => {
+                this.data = object.skills;
+                this.generateList(parent);
+                console.log(object);
+            })
+            .catch(() => console.error('что-то пошло не так'));
     }
 }
 
@@ -72,8 +62,7 @@ const menu = {
 }
 
 const skillList = document.querySelector('dl.skill-list')
-skills.generateList(skillList)
-
+skills.initList('db/skills.json', skillList)
 
 const sortBtnsBlock = document.querySelector('div.skills-sort')
 sortBtnsBlock.addEventListener('click', (e) => {
